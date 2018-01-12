@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Red Mission Generator">
+	<Package name="Mission One">
+		<Container name="Mission One Container">
+			<Key ID="str_redMissionGenerator_mission1_title">
+				<English>Recover the transponder</English>
+				<French>Récupérer le transpondeur</French>
+			</Key>
+			<Key ID="str_redMissionGenerator_mission1_description">
+				<English>A helicopter crashed in the city in enemy territory. We have to recover his transponder.</English>
+				<French>Un hélicoptère s'est écrasé en ville en territoire ennemi. Nous devons récupérer son transpondeur. </French>
+			</Key>
+			<Key ID="str_redMissionGenerator_mission1_progressbar">
+				<English>Transponder recovery in progress.</English>
+				<French>Récupération du transpondeur en cours.</French>
+			</Key>
+		</Container>
+	</Package>
+</Project>

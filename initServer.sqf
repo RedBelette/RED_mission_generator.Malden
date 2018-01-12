@@ -1,0 +1,1 @@
+["true", "execVM 'script\server\spawnPatrol.sqf';", 30] call RF_fnc_delayedAction;

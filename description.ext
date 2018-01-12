@@ -1,0 +1,30 @@
+// https://community.bistudio.com/wiki/Arma_3_Respawn
+respawnOnStart = -1;
+// https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#export-and-import-function
+cba_settings_hasSettingsFile = 1;
+
+class RedFrameworkConfig {
+	class combatPatrol_CfgEnemis {
+		side = "east";
+	};
+
+	class combatPatrol_SpawnCirclePatrols {
+		distance = 200;
+		unitTypes[] = {{"LOP_US_Infantry_SL", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_TL"}, {"LOP_US_Infantry_MG_2", "LOP_US_Infantry_MG_Asst"}, {"LOP_US_Infantry_Rifleman_2", "LOP_US_Infantry_Rifleman_4"}, {"LOP_US_Infantry_Rifleman_2", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_MG_Asst", "LOP_US_Infantry_MG_2"}};
+		radiusPatrols[] = {50, 100, 200};
+	};
+
+	class combatPatrol_SpawnGarnisons {
+		distance = 100;
+		unitTypes[] = {{"LOP_US_Infantry_SL", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_TL"}, {"LOP_US_Infantry_MG_2", "LOP_US_Infantry_MG_Asst"}, {"LOP_US_Infantry_Rifleman_2", "LOP_US_Infantry_Rifleman_4"}, {"LOP_US_Infantry_Rifleman_2", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_MG_Asst", "LOP_US_Infantry_MG_2"}};
+		ramdomizeDistance = 80;
+	};
+
+	class combatPatrol_missions {
+		class combatPatrol_helicopterCrashInTown {
+			helicopterClass = "B_Heli_Light_01_dynamicLoadout_F";
+			unitTypes[] = {{"LOP_US_Infantry_SL", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_TL"}};
+		};
+	};
+
+};
