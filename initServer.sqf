@@ -1,1 +1,3 @@
-["true", "execVM 'script\server\spawnPatrol.sqf';", 30] call RF_fnc_delayedAction;
+["true", "execVM 'script\server\generateMission.sqf';", 30] call RF_fnc_delayedAction;
+
+[computer] execVM "script\server\initComputer.sqf";
