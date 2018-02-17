@@ -4,6 +4,15 @@ respawnOnStart = -1;
 cba_settings_hasSettingsFile = 1;
 
 class RedFrameworkConfig {
+
+//"script\mission\mission01_helicopterCrash.sqf",
+//"script\mission\mission02_intrusion.sqf"
+	class MissionGenerator {
+		missionPaths[] = {
+			{"script\mission\mission03_editorexemple.sqf", false}
+		};
+	};
+
 	class combatPatrol_CfgEnemis {
 		side = "east";
 	};
@@ -27,4 +36,13 @@ class RedFrameworkConfig {
 		};
 	};
 
+};
+
+class CfgFunctions {
+	class RED {
+		class customFunction {
+			file = "function";
+			class spawnByBoat {};
+		};
+	};
 };

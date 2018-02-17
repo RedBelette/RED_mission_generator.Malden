@@ -8,22 +8,22 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=161;
+		nextID=218;
 	};
 	class MarkerIDProvider
 	{
-		nextID=2;
+		nextID=3;
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=31;
 	};
 	class Camera
 	{
-		pos[]={9868.416,95.404503,3861.6357};
-		dir[]={-0.95755208,-0.15940093,0.24069522};
-		up[]={-0.15470526,0.98717564,0.038886245};
-		aside[]={0.2438028,2.2965833e-006,0.96994197};
+		pos[]={5933.4316,98.655861,3491.9229};
+		dir[]={0.024329748,-0.75794536,0.65186822};
+		up[]={0.02826946,0.65231222,0.75742227};
+		aside[]={0.99930722,-1.7062121e-009,-0.037297349};
 	};
 };
 binarizationWanted=0;
@@ -47,13 +47,16 @@ addons[]=
 	"A3_Boat_F_Boat_Transport_01",
 	"PaddleMod",
 	"A3_Structures_F_EPC_Items_Electronics",
-	"A3_Structures_F_Civ_Camping"
+	"A3_Structures_F_Civ_Camping",
+	"po_factions_eu",
+	"A3_Modules_F_Intel",
+	"A3_Modules_F_ObjectModifiers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=17;
+		items=19;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -170,6 +173,19 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item17
+		{
+			className="po_factions_eu";
+			name="po_factions_eu";
+			author="Leight, Keeway";
+		};
+		class Item18
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=14721477;
@@ -280,7 +296,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=26;
+		items=28;
 		class Item0
 		{
 			dataType="Logic";
@@ -959,6 +975,828 @@ class Mission
 			};
 			id=159;
 			type="Land_CampingTable_small_F";
+		};
+		class Item26
+		{
+			dataType="Layer";
+			name="myEditorMissionStart";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=5;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5929.9082,54.407574,3523.738};
+								angles[]={0,0.65003043,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								rank="SERGEANT";
+								name="myEditorMissionStart_sergeant";
+								placementRadius=200;
+							};
+							id=200;
+							type="LOP_US_Infantry_TL";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="RHS_Male03RUS";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5932.125,54.356144,3524.2688};
+								angles[]={0,0.80789822,0};
+							};
+							side="East";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=201;
+							type="LOP_US_Infantry_Rifleman_2";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5930.4692,54.393597,3526.249};
+								angles[]={0,0.81908166,0};
+							};
+							side="East";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=202;
+							type="LOP_US_Infantry_Rifleman_4";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5930.9497,54.380344,3528.8831};
+								angles[]={0,0.79955983,0};
+							};
+							side="East";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=203;
+							type="LOP_US_Infantry_AA";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5932.0767,54.351852,3531.8096};
+								angles[]={0,0.74292237,0};
+							};
+							side="East";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=204;
+							type="LOP_US_Infantry_AT_Asst";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+					};
+					class Attributes
+					{
+						init="call{[this] call CBA_fnc_taskDefend;}";
+						combatMode="WHITE";
+						behaviour="SAFE";
+						speedMode="LIMITED";
+						formation="STAG COLUMN";
+					};
+					id=199;
+				};
+				class Item1
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5935.1641,54.280224,3529.9709};
+						angles[]={0.00076794485,0,6.2599897};
+					};
+					id=210;
+					type="ModuleTaskCreate_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleTaskCreate_F_Destination";
+							expression="_this setVariable ['Destination',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleTaskCreate_F_Type";
+							expression="_this setVariable ['Type',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="attack";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleTaskCreate_F_ShowNotification";
+							expression="_this setVariable ['ShowNotification',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleTaskCreate_F_Marker";
+							expression="_this setVariable ['Marker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ModuleTaskCreate_F_Title";
+							expression="_this setVariable ['Title',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Localiser et tuer le Sergeant";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ModuleTaskCreate_F_Description";
+							expression="_this setVariable ['Description',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Un Sergean et son équipe ont été aperçu dans la ville de Chapoi. Ils sont isolés, vous avez pour mission de les localiser et surtout de tuer le Sergeant.";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ModuleTaskCreate_F_ID";
+							expression="_this setVariable ['ID',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="myEditorMissionStart";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ModuleTaskCreate_F_AlwaysVisible";
+							expression="_this setVariable ['AlwaysVisible',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ModuleTaskCreate_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=4;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ModuleTaskCreate_F_State";
+							expression="_this setVariable ['State',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASSIGNED";
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="ModuleTaskCreate_F_IDParent";
+							expression="_this setVariable ['IDParent',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=11;
+					};
+				};
+				class Item2
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5934.7939,54.291451,3526.665};
+					};
+					id=211;
+					type="ModuleTaskSetState_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleTaskSetState_F_ShowNotification";
+							expression="_this setVariable ['ShowNotification',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleTaskSetState_F_State";
+							expression="_this setVariable ['State',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="SUCCEEDED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Trigger";
+					position[]={5937.166,54.236103,3527.0591};
+					class Attributes
+					{
+						condition="call{!alive myEditorMissionStart_sergeant}";
+						onActivation="call{[lastMissionID] call RF_fnc_closeMission;}";
+						sizeA=0;
+						sizeB=0;
+					};
+					id=212;
+					type="EmptyDetector";
+				};
+				class Item4
+				{
+					dataType="Marker";
+					position[]={5866.5532,54.950001,3526.4729};
+					name="myEditorMissionStart_marker";
+					text="Localiser et tuer le Sergeant";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorRed";
+					alpha=0;
+					a=350;
+					b=350;
+					id=217;
+				};
+			};
+			id=205;
+			atlOffset=-0.26955414;
+		};
+		class Item27
+		{
+			dataType="Layer";
+			name="missiongenerator";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5936.7114,54.248302,3523.2004};
+						angles[]={0,0,6.2599902};
+					};
+					id=206;
+					type="ModuleShowHide_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleShowHide_F_Units";
+							expression="_this setVariable ['Units',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=1;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"SCALAR"
+													};
+												};
+												value=-206;
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleShowHide_F_State";
+							expression="_this setVariable ['State',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5938.7954,54.210789,3525.7034};
+						angles[]={0.00077204045,0,6.2687874};
+					};
+					id=208;
+					type="ModuleShowHide_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleShowHide_F_Units";
+							expression="_this setVariable ['Units',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=1;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"SCALAR"
+													};
+												};
+												value=-206;
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleShowHide_F_State";
+							expression="_this setVariable ['State',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Trigger";
+					position[]={5940.8906,54.181175,3523.4495};
+					class Attributes
+					{
+						condition="call{myEditorMissionStart}";
+						sizeA=0;
+						sizeB=0;
+					};
+					id=209;
+					type="EmptyDetector";
+				};
+				class Item3
+				{
+					dataType="Trigger";
+					position[]={5938.6196,54.213879,3520.8674};
+					class Attributes
+					{
+						condition="call{!myEditorMissionStart}";
+						sizeA=0;
+						sizeB=0;
+					};
+					id=207;
+					type="EmptyDetector";
+				};
+				class Item4
+				{
+					dataType="Trigger";
+					position[]={5935.6099,54.255089,3533.45};
+					class Attributes
+					{
+						condition="call{myEditorMissionStart}";
+						onActivation="call{""myEditorMissionStart_marker"" setMarkerAlpha 0.5;}";
+						sizeA=0;
+						sizeB=0;
+					};
+					id=216;
+					type="EmptyDetector";
+					atlOffset=-0.012001038;
+				};
+			};
+			id=213;
+			atlOffset=-0.00017929077;
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=5;
+		};
+		class Links
+		{
+			items=5;
+			class Item0
+			{
+				linkID=0;
+				item0=207;
+				item1=206;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=209;
+				item1=208;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=212;
+				item1=211;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=211;
+				item1=210;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=216;
+				item1=210;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };

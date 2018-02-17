@@ -1,5 +1,7 @@
 // Generate first mission
 _missionID = call RF_fnc_missionGenerator;
+// stock lastMissionId
+lastMissionID = _missionID;
 // Add generated units to zeus edition
 call RF_fnc_makeAllUnitsEditableForAllCurator;
 // When mission is done another spawn

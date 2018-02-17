@@ -1,0 +1,1 @@
+call RF_fnc_spawnMissionHelicopterCrashInTown;

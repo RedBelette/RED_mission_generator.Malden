@@ -1,0 +1,1 @@
+myEditorMissionStart = true;
