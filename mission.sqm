@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=218;
+		nextID=224;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=31;
+		nextID=35;
 	};
 	class Camera
 	{
-		pos[]={5933.4316,98.655861,3491.9229};
-		dir[]={0.024329748,-0.75794536,0.65186822};
-		up[]={0.02826946,0.65231222,0.75742227};
-		aside[]={0.99930722,-1.7062121e-009,-0.037297349};
+		pos[]={5936.313,90.608147,3490.1931};
+		dir[]={0.061268613,-0.66806763,0.74157691};
+		up[]={0.05501109,0.74406457,0.66583902};
+		aside[]={0.99660718,1.6251579e-007,-0.08233881};
 	};
 };
 binarizationWanted=0;
@@ -1520,7 +1520,7 @@ class Mission
 					class Attributes
 					{
 						condition="call{!alive myEditorMissionStart_sergeant}";
-						onActivation="call{[lastMissionID] call RF_fnc_closeMission;}";
+						onActivation="call{[lastMissionID] call RF_fnc_closeMission;" \n """myEditorMissionStart_marker"" setMarkerAlpha 0;}";
 						sizeA=0;
 						sizeB=0;
 					};
@@ -1557,7 +1557,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={5936.7114,54.248302,3523.2004};
+						position[]={5936.7109,54.24831,3523.2};
 						angles[]={0,0,6.2599902};
 					};
 					id=206;
@@ -1627,8 +1627,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={5938.7954,54.210789,3525.7034};
-						angles[]={0.00077204045,0,6.2687874};
+						position[]={5938.7949,54.210796,3525.7029};
+						angles[]={0.00076794485,0,6.268786};
 					};
 					id=208;
 					type="ModuleShowHide_F";
@@ -1708,7 +1708,7 @@ class Mission
 				class Item3
 				{
 					dataType="Trigger";
-					position[]={5938.6196,54.213879,3520.8674};
+					position[]={5938.6201,54.213871,3520.8669};
 					class Attributes
 					{
 						condition="call{!myEditorMissionStart}";
