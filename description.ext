@@ -9,7 +9,7 @@ class RedFrameworkConfig {
 //"script\mission\mission02_intrusion.sqf"
 	class MissionGenerator {
 		missionPaths[] = {
-			{"script\mission\mission03_editorexemple.sqf", false}
+			{"script\mission\mission04_LDJ_CP_NETTOYEZ_PESAGNE.sqf", false}
 		};
 	};
 
